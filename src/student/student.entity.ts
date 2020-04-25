@@ -7,7 +7,7 @@ export class Student {
     @PrimaryColumn()
     id : string;
     @Column()
-    name: string;
+    firstName: string;
     @Column()
-    lastname : string;
+    lastName : string;
 };
