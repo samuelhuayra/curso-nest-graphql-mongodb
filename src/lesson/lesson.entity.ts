@@ -13,4 +13,6 @@ export class Lesson {
     startDate: string;
     @Column()
     endDate: string;
+    @Column()
+    students: string[];
 };
