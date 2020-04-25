@@ -47,7 +47,15 @@ export class LessonResolver {
 
     @ResolveField()
     students(@Parent() lesson:Lesson){
-        console.log('object>>>',lesson);
+        // console.log('object>>>',lesson);
+        // object>>> Lesson {
+            // _id: 5ea4ae3f58517024a0a94957,
+            // id: '0ea585ef-8733-4e3c-9a5b-49c0eff8fcf6',
+            // name: 'AWS Class',
+            // startDate: '2020-03-28T18:00:00Z',
+            // endDate: '2020-03-28T18:30:00Z',
+            // students: []
+        //   }
         return this.studentService.getManyStudents(lesson.students)
     }
 }
